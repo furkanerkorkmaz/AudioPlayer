@@ -9,7 +9,7 @@ import Foundation
 import AVFoundation
 
 
-protocol AVPlayerItemNotificationObserverDelegate: class {
+protocol AVPlayerItemNotificationObserverDelegate: AnyObject {
     func itemDidPlayToEndTime()
 }
 

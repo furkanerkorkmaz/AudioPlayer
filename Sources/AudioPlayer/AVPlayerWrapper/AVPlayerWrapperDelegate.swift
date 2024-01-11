@@ -8,7 +8,7 @@
 import Foundation
 
 
-protocol AVPlayerWrapperDelegate: class {
+protocol AVPlayerWrapperDelegate: AnyObject {
     
     func AVWrapper(didChangeState state: AVPlayerWrapperState)
     func AVWrapper(secondsElapsed seconds: Double)

@@ -9,7 +9,7 @@
 import Foundation
 import AVFoundation
 
-protocol AVPlayerObserverDelegate: class {
+protocol AVPlayerObserverDelegate: AnyObject {
     
     /**
      Called when the AVPlayer.status changes.
