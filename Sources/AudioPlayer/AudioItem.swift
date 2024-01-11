@@ -153,14 +153,47 @@ public class DefaultAudioItemInitialTime: DefaultAudioItem, InitialTiming {
 public class DefaultAudioItemAssetOptionsProviding: DefaultAudioItem, AssetOptionsProviding {
     public var options: [String: Any]
 
-    override public init(audioUrl: String, artist: String?, title: String?, albumTitle: String?, sourceType: SourceType, artwork: UIImage?, artworkURL: URL?) {
+    override public init(
+        audioUrl: String,
+        artist: String?,
+        title: String?,
+        albumTitle: String?,
+        sourceType: SourceType,
+        artwork: UIImage?,
+        artworkURL: URL?
+    ) {
         options = [:]
-        super.init(audioUrl: audioUrl, artist: artist, title: title, albumTitle: albumTitle, sourceType: sourceType, artwork: artwork, artworkURL: artworkURL)
+        super.init(
+            audioUrl: audioUrl,
+            artist: artist,
+            title: title,
+            albumTitle: albumTitle,
+            sourceType: sourceType,
+            artwork: artwork,
+            artworkURL: artworkURL
+        )
     }
 
-    public init(audioUrl: String, artist: String?, title: String?, albumTitle: String?, sourceType: SourceType, artwork: UIImage?, options: [String: Any]) {
+    public init(
+        audioUrl: String,
+        artist: String?,
+        title: String?,
+        albumTitle: String?,
+        sourceType: SourceType,
+        artwork: UIImage?,
+        artworkURL: URL?,
+        options: [String: Any]
+    ) {
         self.options = options
-        super.init(audioUrl: audioUrl, artist: artist, title: title, albumTitle: albumTitle, sourceType: sourceType, artwork: artwork)
+        super.init(
+            audioUrl: audioUrl,
+            artist: artist,
+            title: title,
+            albumTitle: albumTitle,
+            sourceType: sourceType,
+            artwork: artwork,
+            artworkURL: artworkURL
+        )
     }
 
     public func getAssetOptions() -> [String: Any] {
