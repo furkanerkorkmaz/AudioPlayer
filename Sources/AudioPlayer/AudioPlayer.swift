@@ -7,6 +7,7 @@
 
 import Foundation
 import MediaPlayer
+import UIKit
 
 public typealias AudioPlayerState = AVPlayerWrapperState
 
